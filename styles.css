@@ -130,8 +130,12 @@
   #darkModeToggle {
     background: none;
     border: none;
-    cursor: pointer;
+    cursor: grab;
     color: black;
+  }
+
+  #darkModeToggle:active {
+    cursor: grabbing;
   }
   
   #darkModeToggle:hover svg {
