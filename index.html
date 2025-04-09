@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productivity</title>
+    <link rel="icon" href="logo.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">
+                <svg width="100" height="100" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" fill="none">
+                    <circle cx="100" cy="100" r="70" stroke="#4FD1C5" stroke-width="8"/>
+                    <circle cx="70" cy="70" r="10" fill="#4FD1C5"/>
+                    <circle cx="130" cy="70" r="10" fill="#4FD1C5"/>
+                    <circle cx="70" cy="130" r="10" fill="#4FD1C5"/>
+                    <circle cx="130" cy="130" r="10" fill="#4FD1C5"/>
+                    <line x1="70" y1="70" x2="130" y2="70" stroke="#4FD1C5" stroke-width="4"/>
+                    <line x1="70" y1="130" x2="130" y2="130" stroke="#4FD1C5" stroke-width="4"/>
+                    <line x1="70" y1="70" x2="70" y2="130" stroke="#4FD1C5" stroke-width="4"/>
+                    <line x1="130" y1="70" x2="130" y2="130" stroke="#4FD1C5" stroke-width="4"/>
+                  </svg>
+            </div>
+            
+            <h1> MindSpace</h1>
+
+                <button id="darkModeToggle" aria-label="Toggle dark mode">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="50" height="50" fill="currentColor">
+                      <path d="M21 12.79A9 9 0 0111.21 3a7 7 0 1010 9.79z"/>
+                    </svg>
+                  </button>
+        
+        </header>
+        <div class="main">
+            <nav>
+                <h3>Build a Meaningful Daily Rhythm</h3>
+                <p>
+                  Establishing a thoughtful daily routine lays the foundation for a productive and peaceful life. 
+                  When we wake with intention and clarity, we’re more likely to carry that sense of purpose throughout the day.
+                  It starts with the little things — a calm morning stretch, a few minutes of journaling, or simply sipping tea without checking your phone.
+                  <br><br>
+                  Consistency doesn't have to mean rigidity. A good routine is flexible, supportive, and realistic for your lifestyle.
+                 
+             
+               
+                </p>
+              </nav>
+              
+              
+          <article>
+        <div class="slider">
+            <div class="images">
+                <img src="https://plus.unsplash.com/premium_photo-1675011652821-7588c110c86d?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mjl8fGhlYWx0aCUyMGFuZCUyMGZpdG5lc3N8ZW58MHx8MHx8fDA%3D" alt="image1">
+                <img src="https://plus.unsplash.com/premium_photo-1674440623627-8258b3698047?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8aGVhbHRoJTIwYW5kJTIwZml0bmVzc3xlbnwwfHwwfHx8MA%3D%3D" alt="image2">
+                <img src="https://images.unsplash.com/photo-1444491741275-3747c53c99b4?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NTZ8fGhlYWx0aCUyMGFuZCUyMGZpdG5lc3N8ZW58MHx8MHx8fDA%3D" alt="image3">
+            </div>
+        </div>
+          </article>
+
+          <aside>
+            <h3>Invest in Yourself Daily</h3>
+            <p>
+              Taking care of yourself is not a luxury—it’s a vital commitment. You are the foundation for everything you build in life. 
+              Prioritize yourself, and everything else will align with more ease and purpose.
+              <br><br>
+              True self-focus begins with awareness. It’s recognizing your needs before burnout hits. 
+              It’s choosing nourishment over convenience, rest over overwork, and saying “no” to protect your peace.
+           
+            </p>
+          </aside>
+          
+
+        </div>
+
+        <footer>
+            <span>© 2025</span>
+            <span>Made by Zarnigor</span>
+            <span>☀️ Stay positive</span>
+          </footer>
+    </div>
+     
+    <script>
+        let mode = 0
+        const button = document.getElementById("darkModeToggle")
+      
+        button.onclick = () => {
+          if (mode === 0) {
+            button.innerHTML = `
+              <svg viewBox="0 0 24 24" fill="yellow" xmlns="http://www.w3.org/2000/svg" width="50" height="50">
+                <circle cx="12" cy="12" r="5"/>
+                <line x1="12" y1="1" x2="12" y2="4" stroke="yellow" stroke-width="2"/>
+                <line x1="12" y1="20" x2="12" y2="23" stroke="yellow" stroke-width="2"/>
+                <line x1="1" y1="12" x2="4" y2="12" stroke="yellow" stroke-width="2"/>
+                <line x1="20" y1="12" x2="23" y2="12" stroke="yellow" stroke-width="2"/>
+              </svg>`
+            mode = 1
+          } else {
+            button.innerHTML = `
+              <svg viewBox="0 0 24 24" fill="black" xmlns="http://www.w3.org/2000/svg" width="50" height="50">
+                <path d="M21 12.79A9 9 0 0111.21 3a7 7 0 1010 9.79z"/>
+              </svg>`
+            mode = 0
+          }
+        }
+      </script>
+      
+
+</body>
+</html>
